@@ -18,12 +18,12 @@
 <body>
     <style>
       /* Dans votre fichier CSS */
-.mySwiper {
+.mySwiperr {
   display: block; /* Afficher sur les petits écrans */
 }
 
 @media (min-width: 1024px) { /* Taille pour 'lg' dans Tailwind par défaut */
-  .mySwiper {
+  .mySwiperr {
     display: none; /* Cacher sur les grands écrans */
   }
 }
@@ -32,6 +32,15 @@ footer {
   background-color: #2563eb;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  transform: scale(0.9); /* Réduit la taille à 80% de la taille originale */
+}
+
+/* Si vos boutons utilisent des images de fond */
+.swiper-button-next, .swiper-button-prev {
+  background-size: 10px 10px; /* Ajustez la taille du fond */
+  color: rgb(45, 48, 51);
+}
     </style>
   <nav class="bg-[#F2F7FF] flex justify-between items-center px-44 py-4">
          <div class=" py-3"> <img src="images/header_logo.svg" alt=""></div>
@@ -229,7 +238,7 @@ footer {
 
 </div>
 
-<div class="swiper mySwiper">
+<div class="swiper mySwiperr">
   <div class="swiper-wrapper">
     <!-- Slide 1 -->
     <div class="swiper-slide">
@@ -388,7 +397,7 @@ footer {
     &nbsp; 
     &nbsp;
     &nbsp; 
-    <h1 class="text-teal-500 text-center mb-5 font-medium font-['Poppins']">Why Dr. Matthew Anderson?</h1>
+    <h1 class="text-teal-500 text-center mb-5 font-medium font-['Poppins']">Why Dr. Matthew Anderson ?</h1>
 
     <div class="relative flex justify-center">
       <img src="#" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" alt="">
@@ -447,72 +456,79 @@ footer {
       <p class="text-slate-500 text-base  lg:max-w-xl max-w-xs mx-auto font-['Sora']">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
     </div>
 
-<div  class="relative lg:max-w-5xl max-w-xs mx-auto">
 
-
-<div class="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-5xl mx-auto">
-  <div class="flex flex-col shadow-lg  bg-white px-7 py-[18px] rounded-[32px] border" style="opacity: 1; transform: none;">
-    <p class="text-[#6C87AE] text-base mb-4">
-      
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-    </p>
-
-    <div class="flex items-center space-x-3">
-      <img src="images/samy_white.svg" alt="">
-      <div class="flex flex-col">
-        <h4 class="text-green-500 font-medium">Samy White</h4>
-        <span class="text-gray-500 text-sm">Cardiology Patient</span>
+    <div class="relative lg:max-w-5xl max-w-xs mx-auto">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div data-aos="zoom-out" class="flex flex-col bg-white px-7 py-[18px] rounded-[32px] border">
+              <p class="text-[#6C87AE] text-base mb-4">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+              </p>
+              <div class="flex items-center space-x-3">
+                <img src="images/samy_white.svg" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-green-500 font-medium">Samy White</h4>
+                  <span class="text-gray-500 text-sm">Cardiology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div data-aos="zoom-out" class="flex flex-col bg-white px-7 py-[18px] rounded-[32px] border">
+              <p class="text-[#6C87AE] text-base mb-4">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+              </p>
+              <div class="flex items-center space-x-3">
+                <img src="images/arthur.svg" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-green-500 font-medium">Arthur Northon</h4>
+                  <span class="text-gray-500 text-sm">Cardiology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white px-7 py-[18px] rounded-[32px] border">
+              <p class="text-[#6C87AE] text-base mb-4">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+              </p>
+              <div class="flex items-center space-x-3">
+                <img src="images/kevin.svg" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-green-500 font-medium">Kevin Smith</h4>
+                  <span class="text-gray-500 text-sm">Cardiology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="flex flex-col bg-white px-7 py-[18px] rounded-[32px] border">
+              <p class="text-[#6C87AE] text-base mb-4">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+              </p>
+              <div class="flex items-center space-x-3">
+                <img src="images/amanda.svg" alt="">
+                <div class="flex flex-col">
+                  <h4 class="text-green-500 font-medium">Amanda Jackson</h4>
+                  <span class="text-gray-500 text-sm">Ophthalmology Patient</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ajoutez plus de slides ici si nécessaire -->
+        </div>
+        <!-- Boutons de navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </div>
-  </div>
-
-  <div class="flex flex-col shadow-lg  bg-white px-7 py-[18px] rounded-[32px] border" style="opacity: 1; transform: none;">
-    <p class="text-[#6C87AE] text-base mb-4">
       
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-    </p>
-
-    <div class="flex items-center space-x-3">
-      <img src="images/arthur.svg" alt="">
-            <div class="flex flex-col">
-        <h4 class="text-green-500 font-medium">Arthur Northon</h4>
-        <span class="text-gray-500 text-sm">Cardiology Patient</span>
-      </div>
     </div>
-  </div>
-
-  <div class="flex flex-col shadow-lg  bg-white px-7 py-[18px] rounded-[32px] border" style="opacity: 1; transform: none;">
-    <p class="text-[#6C87AE] text-base mb-4">
-      
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-    </p>
-
-    <div class="flex items-center space-x-3">
-      <img src="images/kevin.svg" alt="">
-            <div class="flex flex-col">
-        <h4 class="text-green-500 font-medium">Kevin Smith</h4>
-        <span class="text-gray-500 text-sm">Cardiology Patient</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex flex-col shadow-lg  bg-white px-7 py-[18px] rounded-[32px] border" style="opacity: 1; transform: none;">
-    <p class="text-[#6C87AE] text-base mb-4">
-      
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
-    </p>
-
-    <div class="flex items-center space-x-3">
-      <img src="images/amanda.svg" alt="">
-      <div class="flex flex-col">
-        <h4 class="text-green-500 font-medium">Amanda Jackson</h4>
-        <span class="text-gray-500 text-sm">Ophthalmology Patient</span>
-      </div>
-    </div>
-  </div>
-  </div>
-
-</div>
+    
 </div>
 
 <footer id="footer" class="p-4 px-2 md:p-16 w-full font-['Sora']">
@@ -563,7 +579,7 @@ footer {
    
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
-    var swiper = new Swiper('.mySwiper', {
+    var swiper = new Swiper('.mySwiperr', {
     // Configuration de Swiper
     navigation: {
       nextEl: '.swiper-button-next',
@@ -583,7 +599,34 @@ footer {
 });
 </script>
 
-  
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    var swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1, // 1 slide par défaut
+      spaceBetween: 10, // Espace entre les slides
+      breakpoints: {
+      640: { // À partir de 640px
+        slidesPerView: 2, // Afficher 2 slides
+        spaceBetween: 20, // Espace entre les slides
+      },
+    },
+    // Configuration de Swiper
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+      // Quand la largeur de la fenêtre est >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      
+    },
+  });
+
+});
+</script>
+
+
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
