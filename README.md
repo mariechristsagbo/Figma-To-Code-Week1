@@ -4,13 +4,14 @@
 This project is a result of the **Figma to Code** challenge by Taïrou Cissé, where I've converted Dr. Matthew Anderson's design into functional code. It's a showcase of bridging design and development in a collaborative environment.
 
 ## 💡 Features
-- Responsive layout that adapts to different screen sizes.
-- Interactive UI components.
-- Optimized for performance and accessibility.
+- Responsive layout that adapts seamlessly to different screen sizes.
+- Interactive UI components with smooth animations and transitions.
+- High performance, optimized for fast load times and a smooth user experience.
 
 ## 🛠️ Technologies Used
-- TailwindCSS
-- JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) for utility-first CSS.
+- JavaScript for dynamic and interactive user interface.
+
 
 ## 🚀 Quick Start
 To clone and run this application, you'll need Git and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
