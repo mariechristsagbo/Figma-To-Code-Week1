@@ -18,7 +18,7 @@
 
 <body>
     <style>
-      /* Dans votre fichier CSS */
+      
 .mySwiperr {
   display: block; /* Afficher sur les petits écrans */
 }
@@ -50,6 +50,7 @@ footer {
         <div>
           <img width="149" height="49" style="color:transparent" src="images/header_logo.svg" alt="">
         </div>
+        <div class="max-lg:fixed max-lg:opacity-0 inset-x-0 justify-center top-0 relative lg:flex lg:flex-row lg:bg-transparent h-full lg:w-[70%] lg:justify-between flex flex-col items-center gap-10 bg-primary z-40 max-lg:-translate-y-[100%] transition-transform ">
         <ul class="flex gap-5 text-base">
           <a class="hover:text-[#3A8EF6] cursor-pointer" href="index.html"> Home</a>
           <a class="hover:text-[#3A8EF6] cursor-pointer" href="">About</a>
@@ -60,17 +61,19 @@ footer {
           <span> <img src="images/message-circle.svg" alt=""></span>
           <span class="text-[16px]"> Book Now</span>
       </div>
+    </div>
       </header>
     </div>
 
     <div class="hidden max-w-2xl mx-auto px-4">
-      <header class="bg-[#F2F7FF] flex justify-between items-center py-4">
+      <header class="bg-[#F2F7FF]">
+        <div class="flex justify-between items-center px-12"> <!-- Utilisez "items-center" pour aligner verticalement les éléments -->
           <img src="images/header_logo.svg" alt="Header Logo" class="w-24"> <!-- Logo à gauche -->
-          <div> <!-- Conteneur pour l'icône/menu à droite -->
-              <img src="images/Vector.png" alt="Vector Image" class="w-6 h-6"> <!-- Icône/menu -->
-          </div>
+          <img src="images/Vector.png" alt="Vector Image" class="w-6 h-6"> <!-- Icône/menu -->
+        </div>
       </header>
     </div>
+    
     
     
      
