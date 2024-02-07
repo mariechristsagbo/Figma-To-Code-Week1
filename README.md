@@ -17,10 +17,10 @@ This project is a result of the **Figma to Code** challenge by Taïrou Cissé, w
 To clone and run this application, you'll need Git and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 # Clone this repository
-git clone https://github.com/mariechristsagbo/Figma-To-Code-Week1.git
+git clone https://github.com/mariechristsagbo/docteur-mathew.git
 
 # Go into the repository
-cd Figma-To-Code-Week1
+cd docteur-mathew
 
 # Install dependencies
 npm install
